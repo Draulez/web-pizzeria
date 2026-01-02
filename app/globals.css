@@ -1,26 +1,51 @@
 @import "tailwindcss";
+@tailwind utilities;
 
+/* =========================
+   Design tokens (brand)
+   ========================= */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brand-primary: #C89B3C;
+  --brand-secondary: #3F5D3A;
+  --brand-dark: #2B2B2B;
+  --brand-color: #693232;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* =========================
+   Utilidades equivalentes
+   ========================= */
+@layer utilities {
+  .bg-brand-primary {
+    background-color: var(--brand-primary);
   }
+
+  .bg-brand-secondary {
+    background-color: var(--brand-secondary);
+  }
+
+  .bg-brand-dark {
+    background-color: var(--brand-dark);
+  }
+
+  .bg-brand-color {
+    background-color: var(--brand-color);
+  }
+
+  .text-brand-primary {
+    color: var(--brand-primary);
+  }
+
+  .text-brand-secondary {
+    color: var(--brand-secondary);
+  }
+
+  .text-brand-dark {
+    color: var(--brand-dark);
+  }
+
+  .text-brand-color {
+    color: var(--brand-color);
+  }
+
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
