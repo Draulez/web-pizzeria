@@ -5,9 +5,9 @@ export default function HomePage() {
     <div >
       {/* HERO */}
       <section className="relative px-6 py-70 text-center bg-[url(/images/trattoria-pizzeria-de.jpg)] bg-cover">
-        <div className="bg-stone-200 rounded-2xl p-10">
+        <div className="bg-stone-200 rounded-2xl p-10 md:w-2/3 lg:w-1/2 mx-auto bg-opacity-90">
           <h1 className="font-[var(--font-playfair)] text-4xl text-stone-900">
-            Trattoria Italiana
+            Trattoria Pizzeria del Angel
           </h1>
 
           <p className="mt-4 text-stone-600 text-base max-w-md mx-auto">

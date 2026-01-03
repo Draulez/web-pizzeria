@@ -20,7 +20,6 @@ export const menu: MenuCategory[] = [
                 name: "Ensalada de la casa",
                 description: "Mezclum de ensalada, tomate, nueces, arándanos, queso de cabra y mermelada",
                 price: 10,
-                image: "/images/ensalada-casa.jpg",
             },
             {
                 name: "Caprese",
