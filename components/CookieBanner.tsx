@@ -24,13 +24,20 @@ export default function CookieBanner() {
         borderRadius: "9999px",
         padding: "8px 16px",
       }}
+      onAccept={() => {
+        localStorage.setItem("cookiesAccepted", "true");
+        window.dispatchEvent(new Event("cookiesAccepted"));
+      }}
+      onDecline={() => {
+        localStorage.setItem("cookiesAccepted", "false");
+      }}
     >
-      <p>Utilizamos cookies para mejorar la experiencia y analizar el tráfico.</p>
-      <button className="ml-4">
-        <Link href="/politicas_privacidad" className="underline">
-          Leer más
-        </Link>
-      </button>
+      <p>
+        Utilizamos cookies para mejorar la experiencia y analizar el tráfico.
+      </p>
+      <Link href="/politicas_privacidad" className="ml-4 underline">
+        Leer más
+      </Link>
     </CookieConsent>
   );
 }

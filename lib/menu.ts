@@ -432,8 +432,44 @@ export const menu: MenuCategory[] = [
         title: "Vinos",
         items: [
             {
-                name: "Postres de la casa",
-                price: 6.50,
+                name: "Nero D´Avola (Tinto)",
+                price: 25,
+            },
+            {
+                name: "Gran Passione (Tinto)",
+                price: 20,
+            },
+            {
+                name: "Tinto de la casa",
+                price: 15,
+            },
+                        {
+                name: "Lambrusco (Tinto espumoso)",
+                price: 15,
+            },
+            {
+                name: "Tres Maris Verdejo (Blanco)",
+                price: 20,
+            },
+            {
+                name: "Inzolia Sicilia Dor (Blanco)",
+                price: 20,
+            },
+            {
+                name: "Grillo Sicilia Doc (Blanco)",
+                price: 25,
+            },
+            {
+                name: "Blanco de la casa",
+                price: 15,
+            },
+            {
+                name: "Proseco",
+                price: 18,
+            },
+            {
+                name: "Lambrusco (Rosado espumoso)",
+                price: 15,
             },
         ],
     },
