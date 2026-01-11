@@ -14,7 +14,7 @@ export default function Navbar() {
           href="/"
           className="font-[var(--font-playfair)] text-xl text-stone-900"
         >
-          Trattoria Pizzeria del Angel 
+          Trattoria Pizzeria de l'Ángel
         </Link>
 
         {/* DESKTOP MENU */}

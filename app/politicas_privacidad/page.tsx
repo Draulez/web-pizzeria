@@ -7,7 +7,7 @@ export default function PoliticaPrivacidadPage() {
 
       <section className="space-y-6 text-stone-700">
         <p>
-          En Trattoria Pizzeria del Angel nos tomamos muy en serio la privacidad de nuestros
+          En Trattoria Pizzeria de l´Ángel nos tomamos muy en serio la privacidad de nuestros
           usuarios. Esta política explica cómo recopilamos y utilizamos los datos
           personales a través de este sitio web.
         </p>
@@ -17,7 +17,7 @@ export default function PoliticaPrivacidadPage() {
         </h2>
 
         <p>
-          <strong>Nombre comercial:</strong> Trattoria Pizzeria del Angel<br />
+          <strong>Nombre comercial:</strong> Trattoria Pizzeria de l´Ángel<br />
           <strong>Dirección:</strong> Camí de Mura 5, 46160 Llíria (Valencia)<br />
           <strong>Teléfono:</strong> +34 960 22 11 49
         </p>

@@ -3,11 +3,25 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div >
+      {/* BANNER DE RECOGIDA */}
+      <div className="relative mx-auto overflow-hidden bg-brand-primary border-t border-stone-300 h-8 flex items-center">
+        <div className="flex animate-slide-left whitespace-nowrap justify-center text-center">
+
+          {[...Array(10)].map((_, index) => (
+            <span
+              key={index}
+              className="px-4 text-stone-900 font-medium text-sm block"
+            >
+              🍕 Disponemos de servicio de recogida de pedidos 🍕
+            </span>
+          ))}
+        </div>
+      </div>
       {/* HERO */}
       <section className="relative px-6 py-70 text-center bg-[url(/images/trattoria-pizzeria-de.jpg)] bg-cover">
         <div className="bg-stone-200 rounded-2xl p-10 md:w-2/3 lg:w-1/2 mx-auto bg-opacity-90">
           <h1 className="font-[var(--font-playfair)] text-4xl text-stone-900">
-            Trattoria Pizzeria del Angel
+            Trattoria Pizzeria de l´Ángel
           </h1>
 
           <p className="mt-4 text-stone-600 text-base max-w-md mx-auto">
@@ -23,18 +37,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CARTA DESTACADA */}
-      <section className="px-6 py-14">
-        <h2 className="font-[var(--font-playfair)] text-2xl mb-8 text-center">
-          Nuestra carta
-        </h2>
-
-        <div className="grid gap-6">
-          <CategoryCard title="Pizzas" href="/carta#pizzas" />
-          <CategoryCard title="Entrantes" href="/carta#entrantes" />
-          <CategoryCard title="Ensaladas" href="/carta#ensaladas" />
-        </div>
-      </section>
 
       {/* UBICACIÓN */}
       <section id="ubicacion" className="bg-stone-100 px-6 py-12 text-center">

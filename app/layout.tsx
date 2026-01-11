@@ -1,7 +1,7 @@
 import "@/app/globals.css";
 import { Playfair_Display, Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
-
+import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import Script from "next/script";
 
@@ -60,6 +60,7 @@ export default function RootLayout({
           `}
         </Script>
         </main>
+        <Footer />
       </body>
     </html>
   );
