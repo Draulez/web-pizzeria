@@ -34,7 +34,7 @@ export default function CartaPage() {
                     <div className="sticky top-0 z-10 bg-white/95 backdrop-blur-sm border-b border-stone-200 shadow-sm">
                         <button
                             onClick={() => toggleCategory(category.id)}
-                            className="w-full flex items-center justify-between font-[var(--font-playfair)] text-xl sm:text-2xl py-4 px-4 text-brand-secondary hover:text-brand-primary transition-colors group"
+                            className="w-full flex items-center justify-between font-[var(--font-playfair)] text-xl sm:text-2xl py-4 px-4 text-brand-secondary hover:text-brand-primary transition-colors group hover:cursor-pointer"
                         >
                             <span className="flex items-center gap-2">
                                 {category.title}
