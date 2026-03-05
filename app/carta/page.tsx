@@ -25,6 +25,9 @@ export default function CartaPage() {
 
     return (
         <div className="px-4 py-8 max-w-2xl mx-auto sm:px-6 sm:py-14">
+            <p className="mb-6 text-sm text-stone-600 bg-stone-50 border border-stone-200 rounded-md px-4 py-3">
+                Suplemento por ingrediente extra: <span className="font-medium text-stone-900">+1,50 €</span>
+            </p>
             {menu.map((category) => (
                 <section
                     key={category.id}
