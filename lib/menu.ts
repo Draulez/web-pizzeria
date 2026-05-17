@@ -289,11 +289,6 @@ export const menu: MenuCategory[] = [
                 price: 13,
             },
             {
-                name: "Raviolacci Piementesi",
-                description: "Pasta fresca rellena de carne con salsa de nata, grana padano y nuez moscada",
-                price: 14,
-            },
-            {
                 name: "Agnoli con Tartufo e Stracchino",
                 description: "Pasta fresca rellena de stracchino con salsa de mantequilla y trufa negra fresca",
                 price: 15,
