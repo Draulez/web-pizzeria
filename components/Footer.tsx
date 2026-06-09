@@ -2,18 +2,18 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-stone-900 text-stone-300 py-8 px-6">
+    <footer className="border-t-4 border-brand-primary bg-brand-color text-brand-cream py-8 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* INFORMACIÓN DEL RESTAURANTE */}
           <div className="text-center md:text-left">
-            <h3 className="font-[var(--font-playfair)] text-xl text-stone-100 mb-2">
-              Trattoria Pizzeria de l'Ángel
+            <h3 className="font-[var(--font-playfair)] text-xl text-white mb-2">
+              Trattoria Pizzeria de l&apos;Ángel
             </h3>
-            <p className="text-sm text-stone-400">
+            <p className="text-sm text-[rgba(255,247,220,0.85)]">
               Camí de Mura 5, 46160 Llíria (Valencia)
             </p>
-            <p className="text-sm text-stone-400">
+            <p className="text-sm text-[rgba(255,247,220,0.85)]">
               (+34) 960 22 11 49
             </p>
           </div>
@@ -25,7 +25,7 @@ export default function Footer() {
               href="https://www.facebook.com/TrattoriaPizzeriaDelAngel/?locale=es_ES"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-stone-300 hover:text-brand-primary transition"
+              className="flex items-center gap-2 text-brand-cream hover:text-brand-primary transition"
               aria-label="Síguenos en Facebook"
             >
               <FacebookIcon />
@@ -35,7 +35,7 @@ export default function Footer() {
             {/* ENLACE POLÍTICAS */}
             <Link
               href="/politicas_privacidad"
-              className="text-sm text-stone-400 hover:text-stone-300 transition"
+              className="text-sm text-[rgba(255,247,220,0.75)] hover:text-white transition"
             >
               Políticas de Privacidad
             </Link>
@@ -43,8 +43,8 @@ export default function Footer() {
         </div>
 
         {/* COPYRIGHT */}
-        <div className="mt-6 pt-6 border-t border-stone-800 text-center text-xs text-stone-500">
-          <p>© {new Date().getFullYear()} Trattoria Pizzeria de l'Ángel. Todos los derechos reservados.</p>
+        <div className="mt-6 pt-6 border-t border-white/15 text-center text-xs text-[rgba(255,247,220,0.65)]">
+          <p>© {new Date().getFullYear()} Trattoria Pizzeria de l&apos;Ángel. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

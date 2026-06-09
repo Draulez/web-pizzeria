@@ -11,16 +11,17 @@ export default function CookieBanner() {
       declineButtonText="Rechazar"
       enableDeclineButton
       cookieName="cookies-consent"
-      style={{ background: "#2B2B2B" }}
+      style={{ background: "#8B1E1E" }}
       buttonStyle={{
-        background: "#C89B3C",
-        color: "#fff",
+        background: "#D8A12B",
+        color: "#241815",
         borderRadius: "9999px",
         padding: "8px 16px",
+        fontWeight: 700,
       }}
       declineButtonStyle={{
-        background: "#555",
-        color: "#fff",
+        background: "#241815",
+        color: "#FFF7DC",
         borderRadius: "9999px",
         padding: "8px 16px",
       }}

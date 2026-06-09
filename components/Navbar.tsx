@@ -7,14 +7,15 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-stone-200 border-b border-stone-200">
+    <header className="sticky top-0 z-50 border-b border-brand-primary bg-brand-cream shadow-sm">
+      <div className="h-1 bg-brand-color" />
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* LOGO / NOMBRE */}
         <Link
           href="/"
-          className="font-[var(--font-playfair)] text-xl text-stone-900"
+          className="font-[var(--font-playfair)] text-xl text-brand-color"
         >
-          Trattoria Pizzeria de l'Ángel
+          Trattoria Pizzeria de l&apos;Ángel
         </Link>
 
         {/* DESKTOP MENU */}
@@ -26,7 +27,7 @@ export default function Navbar() {
         {/* MOBILE BUTTON */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-stone-800"
+          className="md:hidden text-brand-color"
           aria-label="Abrir menú"
         >
           <span className="text-2xl cursor-pointer">☰</span>
@@ -35,7 +36,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       {open && (
-        <div className="md:hidden border-t border-stone-200 bg-stone-200">
+        <div className="md:hidden border-t border-brand-primary bg-brand-cream-deep">
           <nav className="flex flex-col px-6 py-4 gap-4">
             <MobileLink href="/carta" onClick={() => setOpen(false)}>
               Carta
@@ -63,7 +64,7 @@ function NavLink({
   return (
     <Link
       href={href}
-      className="text-sm font-medium text-stone-700 hover:text-brand-primary transition"
+      className="text-sm font-semibold uppercase tracking-[0.16em] text-brand-dark hover:text-brand-color transition"
     >
       {children}
     </Link>
@@ -83,7 +84,7 @@ function MobileLink({
     <Link
       href={href}
       onClick={onClick}
-      className="text-lg font-medium text-stone-800"
+      className="text-lg font-medium text-brand-dark"
     >
       {children}
     </Link>

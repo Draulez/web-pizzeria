@@ -2,6 +2,7 @@
 import { menu } from "@/lib/menu";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 export default function CartaPage() {
     const [openCategories, setOpenCategories] = useState<string[]>([]);
@@ -25,8 +26,17 @@ export default function CartaPage() {
 
     return (
         <div className="px-4 py-8 max-w-2xl mx-auto sm:px-6 sm:py-14">
-            <p className="mb-6 text-sm text-stone-600 bg-stone-50 border border-stone-200 rounded-md px-4 py-3">
-                Suplemento por ingrediente extra: <span className="font-medium text-stone-900">+1,50 €</span>
+            <div className="mb-8 text-center">
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-secondary">
+                    Nuestra carta
+                </p>
+                <h1 className="mt-2 font-[var(--font-playfair)] text-4xl text-brand-color">
+                    Sabores de trattoria
+                </h1>
+            </div>
+
+            <p className="mb-6 text-sm text-stone-700 bg-white/70 border border-[rgba(216,161,43,0.55)] rounded-md px-4 py-3 shadow-sm">
+                Suplemento por ingrediente extra: <span className="font-medium text-brand-color">+1,50 €</span>
             </p>
             {menu.map((category) => (
                 <section
@@ -34,14 +44,14 @@ export default function CartaPage() {
                     id={category.id}
                     className="mb-4 scroll-mt-24"
                 >
-                    <div className="sticky top-0 z-10 bg-white/95 backdrop-blur-sm border-b border-stone-200 shadow-sm">
+                    <div className="sticky top-[68px] z-10 bg-[rgba(255,247,220,0.95)] backdrop-blur-sm border-b border-brand-primary shadow-sm">
                         <button
                             onClick={() => toggleCategory(category.id)}
-                            className="w-full flex items-center justify-between font-[var(--font-playfair)] text-xl sm:text-2xl py-4 px-4 text-brand-secondary hover:text-brand-primary transition-colors group hover:cursor-pointer"
+                            className="w-full flex items-center justify-between font-[var(--font-playfair)] text-xl sm:text-2xl py-4 px-4 text-brand-color hover:text-brand-secondary transition-colors group hover:cursor-pointer"
                         >
                             <span className="flex items-center gap-2">
                                 {category.title}
-                                <span className="text-xs text-stone-400 font-sans group-hover:text-brand-primary transition-colors">
+                                <span className="text-xs text-stone-500 font-sans group-hover:text-brand-secondary transition-colors">
                                     {openCategories.includes(category.id) ? "(cerrar)" : "(ver más)"}
                                 </span>
                             </span>
@@ -60,25 +70,25 @@ export default function CartaPage() {
                     >
                         <ul className="space-y-6 pt-4 pb-6 px-4">
                             {category.items.map((item) => {
-                                const hasImage = "image" in item && item.image;
+                                const imageSrc = item.image;
                                 const isItemOpen = openItems.includes(item.name);
 
-                                if (hasImage) {
+                                if (imageSrc) {
                                     return (
-                                        <li key={item.name} className="border-b border-stone-200 pb-4">
+                                        <li key={item.name} className="border-b border-[rgba(216,161,43,0.35)] pb-4">
                                             <button
                                                 onClick={() => toggleItem(item.name)}
-                                                className="w-full flex justify-between items-start gap-4 text-left hover:bg-stone-50 -mx-2 px-2 py-3 rounded transition-colors group"
+                                                className="w-full flex justify-between items-start gap-4 text-left hover:bg-white/55 -mx-2 px-2 py-3 rounded transition-colors group"
                                             >
                                                 <div className="flex-1">
-                                                    <p className="font-medium text-stone-900 flex items-center gap-2 flex-wrap">
+                                                    <p className="font-medium text-brand-dark flex items-center gap-2 flex-wrap">
                                                         <span>{item.name}</span>
-                                                        <span className="text-xs text-stone-400 font-normal group-hover:text-brand-primary transition-colors">
+                                                        <span className="text-xs text-stone-500 font-normal group-hover:text-brand-secondary transition-colors">
                                                             {isItemOpen ? "(ocultar imagen)" : "(ver imagen)"}
                                                         </span>
                                                     </p>
                                                     {item.description && (
-                                                        <p className="text-sm text-stone-500 mt-1">
+                                                        <p className="text-sm text-stone-600 mt-1">
                                                             {item.description}
                                                         </p>
                                                     )}
@@ -100,10 +110,12 @@ export default function CartaPage() {
                                                         : "max-h-0 opacity-0"
                                                     }`}
                                             >
-                                                <img
-                                                    src={item.image}
+                                                <Image
+                                                    src={imageSrc}
                                                     alt={item.name}
-                                                    className="w-full h-64 object-cover rounded-lg shadow-md"
+                                                    width={800}
+                                                    height={450}
+                                                    className="w-full h-64 object-cover rounded-lg border border-[rgba(216,161,43,0.45)] shadow-md"
                                                 />
                                             </div>
                                         </li>
@@ -113,19 +125,19 @@ export default function CartaPage() {
                                 return (
                                     <li
                                         key={item.name}
-                                        className="flex justify-between gap-4 border-b border-stone-200 pb-4"
+                                        className="flex justify-between gap-4 border-b border-[rgba(216,161,43,0.35)] pb-4"
                                     >
                                         <div>
-                                            <p className="font-medium text-stone-900">
+                                            <p className="font-medium text-brand-dark">
                                                 {item.name}
                                             </p>
                                             {item.description && (
-                                                <p className="text-sm text-stone-500 mt-1">
+                                                <p className="text-sm text-stone-600 mt-1">
                                                     {item.description}
                                                 </p>
                                             )}
                                         </div>
-                                        <span className="font-medium text-stone-900 whitespace-nowrap">
+                                        <span className="font-medium text-brand-color whitespace-nowrap">
                                             {item.price.toFixed(2)} €
                                         </span>
                                     </li>

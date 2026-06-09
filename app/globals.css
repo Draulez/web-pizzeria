@@ -5,10 +5,20 @@
    Design tokens (brand)
    ========================= */
 :root {
-  --brand-primary: #C89B3C;
-  --brand-secondary: #3F5D3A;
-  --brand-dark: #2B2B2B;
-  --brand-color: #693232;
+  --brand-primary: #D8A12B;
+  --brand-secondary: #4F623D;
+  --brand-dark: #241815;
+  --brand-color: #8B1E1E;
+  --brand-cream: #FFF7DC;
+  --brand-cream-deep: #F3E3B3;
+  --brand-tomato: #B72A22;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(216, 161, 43, 0.2), transparent 28rem),
+    linear-gradient(180deg, var(--brand-cream) 0%, #fffaf0 52%, var(--brand-cream) 100%);
+  color: var(--brand-dark);
 }
 
 /* =========================
@@ -31,6 +41,14 @@
     background-color: var(--brand-color);
   }
 
+  .bg-brand-cream {
+    background-color: var(--brand-cream);
+  }
+
+  .bg-brand-cream-deep {
+    background-color: var(--brand-cream-deep);
+  }
+
   .text-brand-primary {
     color: var(--brand-primary);
   }
@@ -45,6 +63,22 @@
 
   .text-brand-color {
     color: var(--brand-color);
+  }
+
+  .text-brand-cream {
+    color: var(--brand-cream);
+  }
+
+  .text-brand-tomato {
+    color: var(--brand-tomato);
+  }
+
+  .border-brand-primary {
+    border-color: var(--brand-primary);
+  }
+
+  .border-brand-color {
+    border-color: var(--brand-color);
   }
 
 }

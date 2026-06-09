@@ -39,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} ${playfair.variable} bg-stone-50 text-stone-800`}>
+      <body className={`${inter.variable} ${playfair.variable} bg-brand-cream text-brand-dark`}>
         <Navbar />
         <main>
           {children}
