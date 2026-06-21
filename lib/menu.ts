@@ -329,11 +329,6 @@ export const menu: MenuCategory[] = [
                 price: 13,
             },
             {
-                name: "Ravioloni ai Funghi",
-                description: "Pasta fresca rellena de setas con salsa de nata y champiñones",
-                price: 14,
-            },
-            {
                 name: "Tortelini de calabaza",
                 description: "Pasta fresca rellena de calabaza",
                 price: 14,
