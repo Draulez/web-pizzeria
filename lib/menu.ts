@@ -174,6 +174,11 @@ export const menu: MenuCategory[] = [
                 price: 16,
             },
             {
+                name: "Montaña Romana",
+                description: "Tomate, mozzarella, salsiccia, guanciale y porcini",
+                price: 16,
+            },
+            {
                 name: "Stagioni",
                 description: "Tomate, mozzarella, champiñones, jamon york, alcachofa y aceitunas",
                 price: 14,
@@ -243,11 +248,6 @@ export const menu: MenuCategory[] = [
                 price: 14,
             },
             {
-                name: "Frutti di Mare",
-                description: "Tomate, mozzarella y mariscos",
-                price: 15,
-            },
-            {
                 name: "Trentina",
                 description: "Tomate, mozzarella, ricotta, scamorza y berenjena",
                 price: 16,
@@ -274,6 +274,10 @@ export const menu: MenuCategory[] = [
                 price: 13,
             },
             {
+                name: "Lasagna de bacalao",
+                price: 15,
+            },
+            {
                 name: "Caneloni de carne",
                 description: "Pasta rellena de carne con salsa de tomate y nata",
                 price: 12.50,
@@ -294,11 +298,6 @@ export const menu: MenuCategory[] = [
                 price: 15,
             },
             {
-                name: "Cappellacio foie gras",
-                description: "Pasta rellena de foie gras con salsa de mantequilla sabor trufa blanca",
-                price: 15,
-            },
-            {
                 name: "Farfalle al Salmone",
                 description: "Pasta mariposa con salsa de nata y salmon",
                 price: 14,
@@ -307,11 +306,6 @@ export const menu: MenuCategory[] = [
                 name: "Caneloni vegetali",
                 description: "Pasta rellena de verduras con salsa de tomate y nata",
                 price: 12.50,
-            },
-            {
-                name: "Quadrotti",
-                description: "Pasta fresca rellena de queso con salsa cuatro quesos",
-                price: 14,
             },
             {
                 name: "Girasoli",
@@ -369,10 +363,6 @@ export const menu: MenuCategory[] = [
             },
             {
                 name: "Tagliatelle al ragu de jabali",
-                price: 18,
-            },
-            {
-                name: "Spaguetti ai Frutti di Mare",
                 price: 18,
             },
             {
