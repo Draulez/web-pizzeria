@@ -120,7 +120,7 @@ export const menu: MenuCategory[] = [
             },
             {
                 name: "Cotto",
-                description: "Tomate fresco, rúcula y grana padano",
+                description: "Tomate, mozzarella y jamon york",
                 price: 11,
             },
             {
@@ -209,7 +209,7 @@ export const menu: MenuCategory[] = [
             },
             {
                 name: "Valtellina",
-                description: "Tomate, mozzarella de buffala, carne de buey curada, rucula y grana padano y grana padano",
+                description: "Tomate, mozzarella de bufala, carne de buey curada, rucula y grana padano",
                 price: 16,
             },
             {
@@ -233,8 +233,8 @@ export const menu: MenuCategory[] = [
                 price: 13,
             },
             {
-                name: "Arcobaleno",
-                description: "Tomate, mozzarella, atún, maíz y cebolla",
+                name: "Al tonno",
+                description: "Tomate, mozzarella, atún y cebolla",
                 price: 12,
             },
             {
@@ -249,7 +249,7 @@ export const menu: MenuCategory[] = [
             },
             {
                 name: "Trentina",
-                description: "Tomate, mozzarella, ricotta, scamorza y berenjena",
+                description: "Tomate, mozzarella, scamorza, speck y chiodini",
                 price: 16,
             },
             {
@@ -314,7 +314,7 @@ export const menu: MenuCategory[] = [
             },
             {
                 name: "Pasta de pera",
-                description: "Pasta fresca rellena de queso y pera con salsa de nata",
+                description: "Pasta fresca rellena de queso y pera con salsa de nata, mascarpone y gorgonzola",
                 price: 15,
             },
             {
